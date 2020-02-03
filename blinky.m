@@ -60,7 +60,7 @@ end
 function exportAsGif(A, n, frameRate)
 % h = gcf;
 % axis tight manual % this ensures that getframe() returns a consistent size
-filename = 'testAnimated.gif';
+filename = 'eyes.gif';
 
 % Capture the plot as an image
 % frame = getframe(h);
