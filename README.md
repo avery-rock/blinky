@@ -1,4 +1,6 @@
-This project seeks to answer a simple question: if you have more than two eyeballs and close some, but not all, of them, is it blinking or winking? Does the fraction of eyes closes matter? How about symmetry? Duration? 
+This project seeks to answer a simple question: if you have more than two eyeballs and close some but not all of them, are you blinking or winking? 
+
+Does the fraction of eyes closes matter? How about symmetry? Duration? 
 
 Do we need another, entirely different word to capture previously unimagined combinations of open and closed eyes? 
 
