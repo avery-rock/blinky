@@ -1,6 +1,14 @@
 function blinky(n, resolution, frames, frameRate, blinkRate, closedFraction)
 % Produces and exports a gif with square tiles of cartoony eyes that blink
-% regularly. The size, number, blink rate,
+% regularly. 
+
+% Args:
+% n - number of eyes per side (square)
+% resolution - number of pixels per side in animation (square)
+% frames - total frames to be saved
+% frameRate - frames per second
+% blinkRate - avg. blinks per second
+% closedFraction - avg. fraction of time each eye will be closed. Between 0 and 1
 
 close all; clc
 eyeball_size = resolution/n;
@@ -10,7 +18,7 @@ f = zeros(eyeball_size, eyeball_size, 3);
 wide = imresize(I(50:280, 460:710), [eyeball_size, eyeball_size], "method", "nearest");
 middle = imresize(I(70:320, 30:300), [eyeball_size, eyeball_size], "method", "nearest");
 closed = imresize(I(340:560, 500:720), [eyeball_size, eyeball_size], "method", "nearest");
-skip_odds = .5*blinkRate/frameRate
+skip_odds = .5*blinkRate/frameRate; 
 A = ones(resolution);
 [X, Y] = meshgrid(1:eyeball_size:resolution, 1:eyeball_size:resolution);
 pos = [X(:), Y(:)];
